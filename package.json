@@ -1,0 +1,24 @@
+{
+  "name": "post-click-frontend",
+  "version": "1.0.0",
+  "description": "Different front end variations of post click experiences",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node scripts.js dev --"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quietcricket/post-click-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quietcricket/post-click-frontend/issues"
+  },
+  "homepage": "https://github.com/quietcricket/post-click-frontend#readme",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "minify": "^7.0.2",
+    "showdown": "^1.9.1"
+  }
+}
