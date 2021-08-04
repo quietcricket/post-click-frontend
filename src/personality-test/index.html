@@ -10,20 +10,26 @@
 	<meta name="twitter:creator" content="[[TWITTER_HANDLE]]" />
 	<meta property="twitter:title" content="[[PAGE_TITLE]]" />
 	<meta property="twitter:image" content="[[PREVIEW_IMAGE]]" />
-	[[CSS]]
 	<script async src="https://www.googletagmanager.com/gtag/js"></script>
 	<script>
-		const TAG = '';
+		const GA_TAG = '';
 		window.dataLayer = window.dataLayer || [];
-		function ga(section) { gtag('config', TAG, { page_path: '/' + section, page_title: document.location.pathname + '/' + section }); }
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
-		gtag('config', TAG, { cookie_expires: 0, send_page_view: false });
+		gtag('config', GA_TAG, { cookie_expires: 0, send_page_view: false });
+		function ga(section) { let p = '/' + document.location.pathname + '/' + section; gtag('config', GA_TAG, { page_path: p, page_title: p }); }
+		function gaResult(result) { gtag("event", "level_end", { level_name: result, success: true, }); };
+		const DATA = [[DATA]];
 	</script>
+	<style>
+		[[CSS]]
+	</style>
 </head>
 
 <body>
-	[[JAVASCRIPT]]
+	<script>
+		[[JAVASCRIPT]]
+	</script>
 </body>
 
 </html>

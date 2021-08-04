@@ -1,33 +1,131 @@
-function initLandingPage() {
+function _shuffle(arr) {
+	var i = arr.length, j, temp;
+	if (i == 0) return;
+	while (--i) {
+		j = Math.floor(Math.random() * (i + 1));
+		temp = arr[i];
+		arr[i] = arr[j];
+		arr[j] = temp;
+	}
+}
 
-	let qContainer = document.getElementById('questions-container');
-
-	for (let i = 0; i < questions.length; i++) {
-
-		let qDiv = '<div id="question-' + (i + 1) + '" style="display:none;">';
-		qDiv += '<img id="q' + (i + 1) + '-img" class="header unselectable" src="img/q' + (i + 1) + '.jpg"/>';
-		qDiv += '<p"></p>';
-		// qDiv += '<p id="q' + (i+1) + ' class="unselectable">' + questions[i].question + '</p>';
-
-		let toShuffle = [];
-		for (let j = 0; j < questions[i].answers.length; j++) {
-			toShuffle[j] = '<a id="q' + (i + 1) + '-o' + (j + 1) + '" class="btn" onclick="answered(this);" >' + questions[i].answers[j] + '</a>';
+class Question {
+	constructor(pce, sheetData) {
+		this.pce = pce;
+		this.img = sheetData[0][1];
+		this.text = sheetData[1][1];
+		this.randomizeAnswers = sheetData[2][1].trim().toLowerCase() == 'yes';
+		let skipped = 3
+		this.answers = [];
+		for (let i = skipped; i < sheetData.length; i++) {
+			this.answers.push({ result: (i - skipped), text: sheetData[i][1] });
 		}
-
-		let shuffled = shuffle(toShuffle);
-		for (let k = 0; k < questions[i].answers.length; k++) {
-			qDiv += shuffled[k];
+		this.holder = document.createElement('div');
+		this.holder.className = "main";
+		document.body.appendChild(this.holder);
+	}
+	show() {
+		document.body.removeChild(document.body.firstElementChild);
+		let ele = document.createElement('div');
+		let img = document.createElement('img');
+		img.src = this.img;
+		img.className = 'header';
+		document.body.appendChild(ele);
+		ele.appendChild(img);
+		let p = document.createElement('p');
+		p.innerHTML = this.text;
+		ele.appendChild(p);
+		if (this.randomizeAnswers) _shuffle(this.answers);
+		for (let a of this.answers) {
+			let btn = document.createElement('a');
+			btn.className = 'btn';
+			btn.setAttribute('data-result', a.result);
+			btn.innerHTML = a.text;
+			ele.appendChild(btn);
+			btn.addEventListener('click', evt => this.pce.answerSelected(evt.target));
 		}
+	}
+}
 
-		qDiv += '</div>';
-		qContainer.innerHTML += qDiv;
-		answersGiven[i] = 0;
+class Result {
+	constructor(pce, sheetData) {
+		this.pce = pce;
+		this.img = sheetData[0][1];
+		this.text = sheetData[1][1];
+		this.btnText = sheetData[2][1];
+		this.tweetText = sheetData[3][1].replace('[[WEBSITE-LINK]]', document.location.href);
+		this.selected = 0;
+	}
+	show() {
+		this.pce.holder.innerHTML = '';
+		let ele = document.createElement('div');
+		let img = document.createElement('img');
+		img.src = this.img;
+		img.className = 'header';
+		document.body.appendChild(ele);
+		ele.appendChild(img);
+		let p = document.createElement('p');
+		p.innerHTML = this.text;
+		ele.appendChild(p);
+		let btn = document.createElement('a');
+		btn.className = 'btn';
+		btn.href = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(this.tweetText);
+		btn.innerHTML = this.btnText;
+		ele.appendChild(btn);
+	}
+}
+
+class PersonalityTest {
+	constructor() {
+		this.questionIndex = -1;
+		this.randomizeQuestions = true;
+		this.userAnswers = [];
+		this.questions = [];
+		this.results = [];
+		for (let sheet of DATA) {
+			let name = sheet.name.toLowerCase().trim();
+			if (name == 'settings') {
+				this.randomizeQuestions = sheet.values[3][1].toLowerCase().trim() == 'yes';
+			} else if (name.match(/question \d+/i)) {
+				this.questions.push(new Question(this, sheet.values));
+			} else if (name.match(/result \d+/i)) {
+				this.results.push(new Result(this, sheet.values));
+			}
+		}
+		if (this.randomizeQuestions) _shuffle(this.questions);
+		this.nextQuestion();
+	}
+	nextQuestion() {
+		this.questionIndex++;
+		if (this.questionIndex < this.questions.length) {
+			ga(`question ${this.questionIndex}/${this.questions.length}`);
+			this.questions[this.questionIndex].show();
+		} else {
+			ga('result');
+			this.showResult();
+		}
 	}
 
-	document.getElementById('question-1').style.display = "block";
-	ga('question-1');
+	answerSelected(btn) {
+		let n = parseInt(btn.getAttribute('data-result'));
+		this.results[n].selected++;
+		this.nextQuestion();
+	}
 
-	addFooter(qContainer);
+	showResult() {
+		let maxCount = 0;
+		let result;
+		let index = 0;
+		for (let r of this.results) {
+			index++;
+			if (r.selected > maxCount) {
+				maxCount = r.selected;
+				result = r;
+			}
+		}
+		gaResult('result-' + index);
+		result.show();
+	}
 }
 
 function answered(answer) {
@@ -64,52 +162,5 @@ function answered(answer) {
 	}
 }
 
-function addFooter(ele) {
-	let fDiv = '<div id="footer">';
-	fDiv += '<p class="footer unselectable"><a href="' + privacyPolicyUrl + '" target="_blank"> Kebijakan Privasi</a> | <a href="' + termsOfUseUrl + '" target="_blank">Syarat Penggunaan</a> </br>'
-	fDiv += '*Perlu berlangganan. &#169; 2021 Disney </p>'
-	ele.innerHTML += fDiv;
-}
 
-function removeFooter() {
-	let footerEle = document.getElementById('footer')
-	footerEle.parentNode.removeChild(footerEle);
-}
-
-function shuffle(arr) {
-
-	let ctr = arr.length, temp, index;
-
-	while (ctr > 0) {
-		index = Math.floor(Math.random() * ctr);
-		ctr--;
-		temp = arr[ctr];
-		arr[ctr] = arr[index];
-		arr[index] = temp;
-	}
-
-	return arr;
-}
-
-function getResult(arr) {
-
-	if (arr.length == 0)
-		return 0;
-
-	let modeMap = {};
-	let maxEl = 0, maxCount = 1;
-
-	for (let i = 0; i < arr.length; i++) {
-		let el = arr[i];
-		if (modeMap[el] == null)
-			modeMap[el] = 1;
-		else
-			modeMap[el]++;
-		if (modeMap[el] > maxCount) {
-			maxEl = el;
-			maxCount = modeMap[el];
-		}
-	}
-
-	return maxEl;
-};
+window.pce = new PersonalityTest();

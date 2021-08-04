@@ -4,7 +4,7 @@
   "description": "Different front end variations of post click experiences",
   "main": "index.js",
   "scripts": {
-    "dev": "node scripts.js dev --"
+    "dev": "node scripts.js dev"
   },
   "repository": {
     "type": "git",

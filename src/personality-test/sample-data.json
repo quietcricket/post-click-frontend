@@ -1,6 +1,6 @@
 [
 	{
-		"sheet": "Settings",
+		"name": "Settings",
 		"values": [
 			[
 				"TwitterHandle",
@@ -8,7 +8,7 @@
 			],
 			[
 				"Website Preview Image",
-				"https://drive.google.com/open?id=1V0eNozW4G5xwMaTjnpp5QPYDbRRYhPG1"
+				"https://monsters-at-work.web.app/img/header.jpg"
 			],
 			[
 				"Website Title",
@@ -21,15 +21,19 @@
 		]
 	},
 	{
-		"sheet": "Question 1",
+		"name": "Question 1",
 		"values": [
 			[
 				"Header Image",
-				"https://drive.google.com/open?id=1WS0isWT0RmHYxM0L31y-5C7jQwtU-2C-"
+				"https://monsters-at-work.web.app/img/q1.jpg"
 			],
 			[
 				"Question",
 				"What does your typical Friday night look like? "
+			],
+			[
+				"Randomize Answers",
+				"yes"
 			],
 			[
 				"Answer 1",
@@ -58,15 +62,19 @@
 		]
 	},
 	{
-		"sheet": "Question 2",
+		"name": "Question 2",
 		"values": [
 			[
 				"Header Image",
-				"https://drive.google.com/open?id=1VMvk8pwivp2s-AeP3_6LGrgsB57x3tc3"
+				"https://monsters-at-work.web.app/img/q2.jpg"
 			],
 			[
 				"Question",
 				"Your friends usually go to you for _______."
+			],
+			[
+				"Randomize Answers",
+				"yes"
 			],
 			[
 				"Answer 1",
@@ -95,15 +103,19 @@
 		]
 	},
 	{
-		"sheet": "Question 3",
+		"name": "Question 3",
 		"values": [
 			[
 				"Header Image",
-				"https://drive.google.com/open?id=1Rijq-fYoytzI_mgFixYsQaOeC5rjpAbu"
+				"https://monsters-at-work.web.app/img/q2.jpg"
 			],
 			[
 				"Question",
 				"What would cheer you up the most? "
+			],
+			[
+				"Randomize Answers",
+				"yes"
 			],
 			[
 				"Answer 1",
@@ -132,15 +144,19 @@
 		]
 	},
 	{
-		"sheet": "Question 4",
+		"name": "Question 4",
 		"values": [
 			[
 				"Header Image",
-				"https://drive.google.com/open?id=1MWHiUHx9s7csQKAcOOkoSomEzez0I7Lk"
+				"https://monsters-at-work.web.app/img/q4.jpg"
 			],
 			[
 				"Question",
 				"When things go wrong, you usually ________. "
+			],
+			[
+				"Randomize Answers",
+				"yes"
 			],
 			[
 				"Answer 1",
@@ -169,15 +185,19 @@
 		]
 	},
 	{
-		"sheet": "Question 5",
+		"name": "Question 5",
 		"values": [
 			[
 				"Header Image",
-				"https://drive.google.com/open?id=1Ud2s73u3XsQlow6Rtz-K32SPvdZkVMD-"
+				"https://monsters-at-work.web.app/img/q5.jpg"
 			],
 			[
 				"Question",
 				"Which is most important to you? "
+			],
+			[
+				"Randomize Answers",
+				"yes"
 			],
 			[
 				"Answer 1",
@@ -206,11 +226,11 @@
 		]
 	},
 	{
-		"sheet": "Result 1",
+		"name": "Result 1",
 		"values": [
 			[
 				"Header Image",
-				"https://drive.google.com/open?id=15VwiMTJY_Hbk3rVl-qCedS2wFc8ZoNvu"
+				"https://monsters-at-work.web.app/img/r1.jpg"
 			],
 			[
 				"Summary",
@@ -227,11 +247,11 @@
 		]
 	},
 	{
-		"sheet": "Result 2",
+		"name": "Result 2",
 		"values": [
 			[
 				"Header Image",
-				"https://drive.google.com/open?id=1nKzyPdJuRMHaDkPDhq70jRLBu6MO_IMh"
+				"https://monsters-at-work.web.app/img/r2.jpg"
 			],
 			[
 				"Summary",
@@ -248,11 +268,11 @@
 		]
 	},
 	{
-		"sheet": "Result 3",
+		"name": "Result 3",
 		"values": [
 			[
 				"Header Image",
-				"https://drive.google.com/open?id=11BGoyd8x4HeDTjPjvrWVN1AZSgg25Uh4"
+				"https://monsters-at-work.web.app/img/r3.jpg"
 			],
 			[
 				"Summary",
@@ -269,11 +289,11 @@
 		]
 	},
 	{
-		"sheet": "Result 4",
+		"name": "Result 4",
 		"values": [
 			[
 				"Header Image",
-				"https://drive.google.com/open?id=1mB70fERN3f3FEgaWfZ8tD3Q2HsBUBxDo"
+				"https://monsters-at-work.web.app/img/r4.jpg"
 			],
 			[
 				"Summary",
@@ -290,11 +310,11 @@
 		]
 	},
 	{
-		"sheet": "Result 5",
+		"name": "Result 5",
 		"values": [
 			[
 				"Header Image",
-				"https://drive.google.com/open?id=1XlAB3Rdibtm-vGlgLAXKquUq6ib5XxX7"
+				"https://monsters-at-work.web.app/img/r5.jpg"
 			],
 			[
 				"Summary",
@@ -311,11 +331,11 @@
 		]
 	},
 	{
-		"sheet": "Result 6",
+		"name": "Result 6",
 		"values": [
 			[
 				"Header Image",
-				"https://drive.google.com/open?id=1mgjjCwP5tF0g96M30mZ_xvBpDYV-Y4qB"
+				"https://monsters-at-work.web.app/img/r5.jpg"
 			],
 			[
 				"Summary",

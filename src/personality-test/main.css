@@ -15,6 +15,7 @@ body {
 	margin: 0 auto;
 	min-height: 100vh;
 	background-color: white;
+	padding: 25px;
 }
 
 ::-moz-selection {
@@ -27,20 +28,6 @@ body {
 	text-shadow: none;
 }
 
-.unselectable {
-	-webkit-touch-callout: none;
-	/* iOS Safari */
-	-webkit-user-select: none;
-	/* Safari */
-	-khtml-user-select: none;
-	/* Konqueror HTML */
-	-moz-user-select: none;
-	/* Firefox */
-	-ms-user-select: none;
-	/* Internet Explorer/Edge */
-	user-select: none;
-	/* Non-prefixed version, currently supported by Chrome and Opera */
-}
 
 hr {
 	display: block;
@@ -58,15 +45,17 @@ img.emoji {
 	vertical-align: -0.1em;
 }
 
-.main {
-	padding: 25px;
-}
-
 img.header {
 	max-width: 100%;
 	border-radius: 14px;
 	border: solid 1px rgb(204, 214, 221);
 	padding: 0px;
+	user-select: none;
+	margin-bottom: 25px;
+}
+
+img.header+p {
+	margin-top: 0px;
 }
 
 .btn {
@@ -90,25 +79,6 @@ img.header {
 	background-color: rgba(29, 161, 242, 0.1);
 }
 
-.footer {
-	margin-top: 40px;
-	text-align: center;
-	font-size: 0.8em;
-	color: #aaa;
-}
-
-.footer a:link {
-	color: #aaa;
-	text-decoration: none;
-}
-
-.footer a:hover {
-	color: #000;
-}
-
-.footer a:visited {
-	color: #aaa;
-}
 
 @media (prefers-color-scheme: dark) {
 	html {
