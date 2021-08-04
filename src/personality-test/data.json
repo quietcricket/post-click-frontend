@@ -1,0 +1,334 @@
+[
+	{
+		"sheet": "Settings",
+		"values": [
+			[
+				"TwitterHandle",
+				"SpotifyKDaebak"
+			],
+			[
+				"Website Preview Image",
+				"https://drive.google.com/open?id=1V0eNozW4G5xwMaTjnpp5QPYDbRRYhPG1"
+			],
+			[
+				"Website Title",
+				"Spotify K-Pop ersonality Quiz"
+			],
+			[
+				"Randomize Questions",
+				"yes"
+			]
+		]
+	},
+	{
+		"sheet": "Question 1",
+		"values": [
+			[
+				"Header Image",
+				"https://drive.google.com/open?id=1WS0isWT0RmHYxM0L31y-5C7jQwtU-2C-"
+			],
+			[
+				"Question",
+				"What does your typical Friday night look like? "
+			],
+			[
+				"Answer 1",
+				"Game night with my friends"
+			],
+			[
+				"Answer 2",
+				"Wherever the night takes me "
+			],
+			[
+				"Answer 3",
+				"Hardcore partying"
+			],
+			[
+				"Answer 4",
+				"A sleepover with my BFF "
+			],
+			[
+				"Answer 5",
+				"At a pop-up event "
+			],
+			[
+				"Answer 6",
+				"At a concert gig"
+			]
+		]
+	},
+	{
+		"sheet": "Question 2",
+		"values": [
+			[
+				"Header Image",
+				"https://drive.google.com/open?id=1VMvk8pwivp2s-AeP3_6LGrgsB57x3tc3"
+			],
+			[
+				"Question",
+				"Your friends usually go to you for _______."
+			],
+			[
+				"Answer 1",
+				"Career advice"
+			],
+			[
+				"Answer 2",
+				"A listening ear"
+			],
+			[
+				"Answer 3",
+				"Fashion advice"
+			],
+			[
+				"Answer 4",
+				"All kinds of help"
+			],
+			[
+				"Answer 5",
+				"The latest gossip"
+			],
+			[
+				"Answer 6",
+				"Relationship advice"
+			]
+		]
+	},
+	{
+		"sheet": "Question 3",
+		"values": [
+			[
+				"Header Image",
+				"https://drive.google.com/open?id=1Rijq-fYoytzI_mgFixYsQaOeC5rjpAbu"
+			],
+			[
+				"Question",
+				"What would cheer you up the most? "
+			],
+			[
+				"Answer 1",
+				"A good pep talk"
+			],
+			[
+				"Answer 2",
+				"Some alone time"
+			],
+			[
+				"Answer 3",
+				"Retail therapy"
+			],
+			[
+				"Answer 4",
+				"A good laugh"
+			],
+			[
+				"Answer 5",
+				"Getting a surprise"
+			],
+			[
+				"Answer 6",
+				"A hug"
+			]
+		]
+	},
+	{
+		"sheet": "Question 4",
+		"values": [
+			[
+				"Header Image",
+				"https://drive.google.com/open?id=1MWHiUHx9s7csQKAcOOkoSomEzez0I7Lk"
+			],
+			[
+				"Question",
+				"When things go wrong, you usually ________. "
+			],
+			[
+				"Answer 1",
+				"Have a back-up plan"
+			],
+			[
+				"Answer 2",
+				"Let things be"
+			],
+			[
+				"Answer 3",
+				"Flare up and then deal with it"
+			],
+			[
+				"Answer 4",
+				"Seek advice from a trusted friend"
+			],
+			[
+				"Answer 5",
+				"Google a solution"
+			],
+			[
+				"Answer 6",
+				"Take a moment for myself"
+			]
+		]
+	},
+	{
+		"sheet": "Question 5",
+		"values": [
+			[
+				"Header Image",
+				"https://drive.google.com/open?id=1Ud2s73u3XsQlow6Rtz-K32SPvdZkVMD-"
+			],
+			[
+				"Question",
+				"Which is most important to you? "
+			],
+			[
+				"Answer 1",
+				"Being in control"
+			],
+			[
+				"Answer 2",
+				"Having freedom"
+			],
+			[
+				"Answer 3",
+				"Being right"
+			],
+			[
+				"Answer 4",
+				"My friends"
+			],
+			[
+				"Answer 5",
+				"Being the first to know something"
+			],
+			[
+				"Answer 6",
+				"Being in love"
+			]
+		]
+	},
+	{
+		"sheet": "Result 1",
+		"values": [
+			[
+				"Header Image",
+				"https://drive.google.com/open?id=15VwiMTJY_Hbk3rVl-qCedS2wFc8ZoNvu"
+			],
+			[
+				"Summary",
+				"Ladies and gentlemen, make way for the champion. Cool, calm and in control, you bring the awe and then some. Together with your favourite K-Pop crew like TWICE and IZ*ONE, you crank the noise up and bring the house down. You are K-Pop Daebak."
+			],
+			[
+				"Tweet Button",
+				"Share playlist"
+			],
+			[
+				"Tweet Text",
+				"Based on my personality, I'd love to listen to #SpotifyKPopDaebak! spoti.fi/KPopDaebak\n\nTake the quiz here: [[WEBSITE-LINK]]"
+			]
+		]
+	},
+	{
+		"sheet": "Result 2",
+		"values": [
+			[
+				"Header Image",
+				"https://drive.google.com/open?id=1nKzyPdJuRMHaDkPDhq70jRLBu6MO_IMh"
+			],
+			[
+				"Summary",
+				"More chilled than a bowl of naengmyeon and just as tasty, you’re laid back with a groovy K-R&B vibe. You go with the flow and love to kick back with your fam like Crush and DeVita. You are Trenchill K-R&B."
+			],
+			[
+				"Tweet Button",
+				"Share playlist"
+			],
+			[
+				"Tweet Text",
+				"Based on my personality, I'd love to listen to #SpotifyTrenChillKRnB! spoti.fi/TrenChillKRnB\n\nTake the quiz here: [[WEBSITE-LINK]]"
+			]
+		]
+	},
+	{
+		"sheet": "Result 3",
+		"values": [
+			[
+				"Header Image",
+				"https://drive.google.com/open?id=11BGoyd8x4HeDTjPjvrWVN1AZSgg25Uh4"
+			],
+			[
+				"Summary",
+				"They be callin’ and you be rollin’. From the streets to the stage, you always make your mark. Representing with your homies like Agust D and GRAY, you bring the sickest rhymes and the craziest beats. You are K-Hip-Hop +82."
+			],
+			[
+				"Tweet Button",
+				"Share playlist"
+			],
+			[
+				"Tweet Text",
+				"Based on my personality, I'd love to listen to #SpotifyKHipHop82! spoti.fi/KHipHop82 \n\nTake the quiz here: [[WEBSITE-LINK]]"
+			]
+		]
+	},
+	{
+		"sheet": "Result 4",
+		"values": [
+			[
+				"Header Image",
+				"https://drive.google.com/open?id=1mB70fERN3f3FEgaWfZ8tD3Q2HsBUBxDo"
+			],
+			[
+				"Summary",
+				"A true friend, you always have your bestie's back - come rain or shine. Nothing can get in your way when you have your mind set on something. And when you get your girls together - from CHUNG HA to Solar - the boys better watch out. You are Girl Krush."
+			],
+			[
+				"Tweet Button",
+				"Share playlist"
+			],
+			[
+				"Tweet Text",
+				"Based on my personality, I'd love to listen to #SpotifyGirlKrush! spoti.fi/GirlKrush\n\nTake the quiz here: [[WEBSITE-LINK]]"
+			]
+		]
+	},
+	{
+		"sheet": "Result 5",
+		"values": [
+			[
+				"Header Image",
+				"https://drive.google.com/open?id=1XlAB3Rdibtm-vGlgLAXKquUq6ib5XxX7"
+			],
+			[
+				"Summary",
+				"Despite being the maknae, you got mad skills. You know what’s what, who’s who and where to find the freshest beats. You are always moving, kickin’ it with friends like BANG YE DAM and SECRET NUMBER. You are K-Pop Rising."
+			],
+			[
+				"Tweet Button",
+				"Share playlist"
+			],
+			[
+				"Tweet Text",
+				"Based on my personality, I'd love to listen to #SpotifyKPopRising! spoti.fi/KPopRising\n\nTake the quiz here: [[WEBSITE-LINK]]"
+			]
+		]
+	},
+	{
+		"sheet": "Result 6",
+		"values": [
+			[
+				"Header Image",
+				"https://drive.google.com/open?id=1mgjjCwP5tF0g96M30mZ_xvBpDYV-Y4qB"
+			],
+			[
+				"Summary",
+				"You’re a sensitive soul and you’re not afraid to express it. You like to throw your hands in the air and wave ‘em around because you do care. You can happily spend all night jamming with your fellow rockers like DAY6 and HYUKOH. You are Cool K:IDs Rock."
+			],
+			[
+				"Tweet Button",
+				"Share playlist"
+			],
+			[
+				"Tweet Text",
+				"Based on my personality, I'd love to listen to #SpotifyCoolKIDSRock! spoti.fi/CoolKIDSRock\n\nTake the quiz here: [[WEBSITE-LINK]]"
+			]
+		]
+	}
+]
