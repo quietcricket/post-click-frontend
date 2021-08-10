@@ -20,17 +20,14 @@ class Question {
 		for (let i = skipped; i < sheetData.length; i++) {
 			this.answers.push({ result: (i - skipped), text: sheetData[i][1] });
 		}
-		this.holder = document.createElement('div');
-		this.holder.className = "main";
-		document.body.appendChild(this.holder);
 	}
 	show() {
-		document.body.removeChild(document.body.firstElementChild);
+		this.pce.holder.innerHTML = "";
 		let ele = document.createElement('div');
 		let img = document.createElement('img');
 		img.src = this.img;
 		img.className = 'header';
-		document.body.appendChild(ele);
+		this.pce.holder.appendChild(ele);
 		ele.appendChild(img);
 		let p = document.createElement('p');
 		p.innerHTML = this.text;
@@ -62,7 +59,7 @@ class Result {
 		let img = document.createElement('img');
 		img.src = this.img;
 		img.className = 'header';
-		document.body.appendChild(ele);
+		this.pce.holder.appendChild(ele);
 		ele.appendChild(img);
 		let p = document.createElement('p');
 		p.innerHTML = this.text;
@@ -75,7 +72,7 @@ class Result {
 	}
 }
 
-class PersonalityTest {
+class PersonalityTest {'
 	constructor() {
 		this.questionIndex = -1;
 		this.randomizeQuestions = true;
@@ -92,7 +89,11 @@ class PersonalityTest {
 				this.results.push(new Result(this, sheet.values));
 			}
 		}
+		this.holder = document.createElement('div');
+		this.holder.className = "main";
+		document.body.appendChild(this.holder);
 		if (this.randomizeQuestions) _shuffle(this.questions);
+
 		this.nextQuestion();
 	}
 	nextQuestion() {
