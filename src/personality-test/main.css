@@ -52,6 +52,7 @@ img.header {
 	padding: 0px;
 	user-select: none;
 	margin-bottom: 25px;
+	width: 100%;
 }
 
 img.header+p {

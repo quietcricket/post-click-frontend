@@ -8,7 +8,6 @@ function _shuffle(arr) {
 		arr[j] = temp;
 	}
 }
-
 class Question {
 	constructor(pce, sheetData) {
 		this.pce = pce;
@@ -72,7 +71,7 @@ class Result {
 	}
 }
 
-class PersonalityTest {'
+class PersonalityTest {
 	constructor() {
 		this.questionIndex = -1;
 		this.randomizeQuestions = true;
@@ -99,10 +98,9 @@ class PersonalityTest {'
 	nextQuestion() {
 		this.questionIndex++;
 		if (this.questionIndex < this.questions.length) {
-			ga(`question ${this.questionIndex}/${this.questions.length}`);
+			gtag('event', 'question', { label: `${this.questionIndex}/${this.questions.length}` });
 			this.questions[this.questionIndex].show();
 		} else {
-			ga('result');
 			this.showResult();
 		}
 	}
@@ -110,6 +108,7 @@ class PersonalityTest {'
 	answerSelected(btn) {
 		let n = parseInt(btn.getAttribute('data-result'));
 		this.results[n].selected++;
+		gtag('event', 'answer', { label: btn.innerHTML });
 		this.nextQuestion();
 	}
 
@@ -124,44 +123,9 @@ class PersonalityTest {'
 				result = r;
 			}
 		}
-		gaResult('result-' + index);
+		gtag('event', 'result', { label: index + 1 + '' });
 		result.show();
 	}
 }
-
-function answered(answer) {
-
-	let q = parseInt(answer.id.toString().substring(1, 2));
-	let a = parseInt(answer.id.toString().substring(4, 5));
-	document.getElementById('question-' + q).style.display = "none";
-	answersGiven[q - 1] = a;
-
-	if (q < questions.length) {
-		document.getElementById('question-' + (q + 1)).style.display = "block";
-		ga('question-' + (q + 1));
-	}
-	else {
-
-		removeFooter();
-
-		let resultId = getResult(answersGiven);
-
-		if (resultId == 0) // If all answers are different
-			resultId = 0; // Set default result
-		else
-			resultId -= 1;
-
-		ga('result-' + resultId);
-		let rDiv = '<img class="header unselectable" src="img/' + results[resultId].img + '"/>';
-		rDiv += '<p class="unselectable">' + results[resultId].copy + '</p>';
-		rDiv += '<a class="btn" href="https://twitter.com/intent/tweet?text=' + encodeURIComponent(results[resultId].tweet + appUrl) + '">' + results[resultId].cta + '</a>';
-		let resultContainer = document.getElementById('result');
-		resultContainer.innerHTML += rDiv;
-		resultContainer.style.display = "block";
-
-		addFooter(resultContainer);
-	}
-}
-
 
 window.pce = new PersonalityTest();

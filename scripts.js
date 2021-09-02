@@ -41,5 +41,4 @@ function localDev(variant) {
 	liveServer.start(params);
 }
 
-// console.log(process.argv[3]);
 localDev(process.argv[3]);
