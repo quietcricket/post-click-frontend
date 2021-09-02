@@ -28,9 +28,11 @@ class Question {
 		img.className = 'header';
 		this.pce.holder.appendChild(ele);
 		ele.appendChild(img);
-		let p = document.createElement('p');
-		p.innerHTML = this.text;
-		ele.appendChild(p);
+		if(this.text){
+			let p = document.createElement('p');
+			p.innerHTML = this.text;
+			ele.appendChild(p);
+		}
 		if (this.randomizeAnswers) _shuffle(this.answers);
 		for (let a of this.answers) {
 			let btn = document.createElement('a');
