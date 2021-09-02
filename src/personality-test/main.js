@@ -67,6 +67,7 @@ class Result {
 		btn.className = 'btn';
 		btn.href = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(this.tweetText);
 		btn.innerHTML = this.btnText;
+		btn.addEventListener('click', evt => gtag('event', 'share', { label: this.btnText }));
 		ele.appendChild(btn);
 	}
 }
