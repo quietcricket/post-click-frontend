@@ -28,7 +28,7 @@ class Question {
 		img.className = 'header';
 		this.pce.holder.appendChild(ele);
 		ele.appendChild(img);
-		if(this.text){
+		if (this.text) {
 			let p = document.createElement('p');
 			p.innerHTML = this.text;
 			ele.appendChild(p);
@@ -101,7 +101,7 @@ class PersonalityTest {
 	nextQuestion() {
 		this.questionIndex++;
 		if (this.questionIndex < this.questions.length) {
-			gtag('event', 'question', { label: `${this.questionIndex}/${this.questions.length}` });
+			gtag('event', 'question', { label: `${this.questionIndex+1}/${this.questions.length}` });
 			this.questions[this.questionIndex].show();
 		} else {
 			this.showResult();
@@ -126,7 +126,7 @@ class PersonalityTest {
 				result = r;
 			}
 		}
-		gtag('event', 'result', { label: index + 1 + '' });
+		gtag('event', 'result', { label: result });
 		result.show();
 	}
 }
