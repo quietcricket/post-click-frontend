@@ -3,20 +3,28 @@
 		"name": "Settings",
 		"values": [
 			[
-				"TwitterHandle",
-				"SpotifyKDaebak"
+				"Twitter @Handle",
+				"ANZ_NZ"
 			],
 			[
 				"Website Preview Image",
-				"https://monsters-at-work.web.app/img/header.jpg"
+				"",
+				"16:9 JPEG Image (maximum 1920x1080)"
 			],
 			[
-				"Website Title",
-				"Spotify K-Pop ersonality Quiz"
+				"Quiz Name",
+				"ANZ Financial Wellbeing Quiz",
+				"Name of the quiz or campaign name"
 			],
 			[
 				"Randomize Questions",
-				"yes"
+				"YES",
+				"Shuffle questions in random order"
+			],
+			[
+				"Footer Text",
+				"",
+				"(Optional) Footer copy right and terms and conditions etc. Support HTML"
 			]
 		]
 	},
@@ -25,39 +33,34 @@
 		"values": [
 			[
 				"Header Image",
-				"https://monsters-at-work.web.app/img/q1.jpg"
+				"https://pcexp.app/q-preview/N-nSRM2LqMMckKu_Mo9MU/img/4ovUkgWTqZg5gkw3sL3No.jpg"
 			],
 			[
-				"Question",
-				"What does your typical Friday night look like? "
+				"Question"
 			],
 			[
 				"Randomize Answers",
-				"yes"
+				"YES"
 			],
 			[
 				"Answer 1",
-				"Game night with my friends"
+				"Every damn night",
+				"Result 1"
 			],
 			[
 				"Answer 2",
-				"Wherever the night takes me "
+				"Sometimes",
+				"Result 2"
 			],
 			[
 				"Answer 3",
-				"Hardcore partying"
+				"Depends what time it is",
+				"Result 3"
 			],
 			[
 				"Answer 4",
-				"A sleepover with my BFF "
-			],
-			[
-				"Answer 5",
-				"At a pop-up event "
-			],
-			[
-				"Answer 6",
-				"At a concert gig"
+				"Not at all",
+				"Result 4"
 			]
 		]
 	},
@@ -66,39 +69,34 @@
 		"values": [
 			[
 				"Header Image",
-				"https://monsters-at-work.web.app/img/q2.jpg"
+				"https://pcexp.app/q-preview/N-nSRM2LqMMckKu_Mo9MU/img/1Xe-DtxkWmCcMWzu9SO32.jpg"
 			],
 			[
-				"Question",
-				"Your friends usually go to you for _______."
+				"Question"
 			],
 			[
 				"Randomize Answers",
-				"yes"
+				"YES"
 			],
 			[
 				"Answer 1",
-				"Career advice"
+				"Once or twice",
+				"Result 1"
 			],
 			[
 				"Answer 2",
-				"A listening ear"
+				"A lot of times",
+				"Result 2"
 			],
 			[
 				"Answer 3",
-				"Fashion advice"
+				"I sleep during the day",
+				"Result 3"
 			],
 			[
 				"Answer 4",
-				"All kinds of help"
-			],
-			[
-				"Answer 5",
-				"The latest gossip"
-			],
-			[
-				"Answer 6",
-				"Relationship advice"
+				"Never",
+				"Result 4"
 			]
 		]
 	},
@@ -107,39 +105,34 @@
 		"values": [
 			[
 				"Header Image",
-				"https://monsters-at-work.web.app/img/q2.jpg"
+				"https://pcexp.app/q-preview/N-nSRM2LqMMckKu_Mo9MU/img/GUlLbWEiZX3ku67dMP6Es.jpg"
 			],
 			[
-				"Question",
-				"What would cheer you up the most? "
+				"Question"
 			],
 			[
 				"Randomize Answers",
-				"yes"
+				"YES"
 			],
 			[
 				"Answer 1",
-				"A good pep talk"
+				"With my eyes wide open",
+				"Result 1"
 			],
 			[
 				"Answer 2",
-				"Some alone time"
+				"On my stomach",
+				"Result 2"
 			],
 			[
 				"Answer 3",
-				"Retail therapy"
+				"In the foetal position",
+				"Result 3"
 			],
 			[
 				"Answer 4",
-				"A good laugh"
-			],
-			[
-				"Answer 5",
-				"Getting a surprise"
-			],
-			[
-				"Answer 6",
-				"A hug"
+				"No idea, too zonked",
+				"Result 4"
 			]
 		]
 	},
@@ -148,39 +141,34 @@
 		"values": [
 			[
 				"Header Image",
-				"https://monsters-at-work.web.app/img/q4.jpg"
+				"https://pcexp.app/q-preview/N-nSRM2LqMMckKu_Mo9MU/img/khZTjre0WqDwwxTbTeIv1.jpg"
 			],
 			[
-				"Question",
-				"When things go wrong, you usually ________. "
+				"Question"
 			],
 			[
 				"Randomize Answers",
-				"yes"
+				"YES"
 			],
 			[
 				"Answer 1",
-				"Have a back-up plan"
+				"Toss and turn",
+				"Result 1"
 			],
 			[
 				"Answer 2",
-				"Let things be"
+				"Count sheep",
+				"Result 2"
 			],
 			[
 				"Answer 3",
-				"Flare up and then deal with it"
+				"Go for a walk",
+				"Result 3"
 			],
 			[
 				"Answer 4",
-				"Seek advice from a trusted friend"
-			],
-			[
-				"Answer 5",
-				"Google a solution"
-			],
-			[
-				"Answer 6",
-				"Take a moment for myself"
+				"Can’t relate",
+				"Result 4"
 			]
 		]
 	},
@@ -189,39 +177,34 @@
 		"values": [
 			[
 				"Header Image",
-				"https://monsters-at-work.web.app/img/q5.jpg"
+				"https://pcexp.app/q-preview/N-nSRM2LqMMckKu_Mo9MU/img/Wh-jQeCXGyU8iCeYgmktP.jpg"
 			],
 			[
-				"Question",
-				"Which is most important to you? "
+				"Question"
 			],
 			[
 				"Randomize Answers",
-				"yes"
+				"YES"
 			],
 			[
 				"Answer 1",
-				"Being in control"
+				"Sheer existential dread",
+				"Result 1"
 			],
 			[
 				"Answer 2",
-				"Having freedom"
+				"Morning sunlight",
+				"Result 2"
 			],
 			[
 				"Answer 3",
-				"Being right"
+				"Alarm",
+				"Result 3"
 			],
 			[
 				"Answer 4",
-				"My friends"
-			],
-			[
-				"Answer 5",
-				"Being the first to know something"
-			],
-			[
-				"Answer 6",
-				"Being in love"
+				"Body clock",
+				"Result 4"
 			]
 		]
 	},
@@ -230,11 +213,11 @@
 		"values": [
 			[
 				"Header Image",
-				"https://monsters-at-work.web.app/img/r1.jpg"
+				"https://pcexp.app/q-preview/N-nSRM2LqMMckKu_Mo9MU/img/Obp3IJK4tzR4hBqp5O-9R.jpg"
 			],
 			[
 				"Summary",
-				"Ladies and gentlemen, make way for the champion. Cool, calm and in control, you bring the awe and then some. Together with your favourite K-Pop crew like TWICE and IZ*ONE, you crank the noise up and bring the house down. You are K-Pop Daebak."
+				"You manage to get tucked in at a reasonable hour, but your brain struggles to follow suit. Instead, it’s in overdrive calculating the exact amount of sleep you’ll get if you fall asleep this very second. There’s nothing left to do but stare at your phone and incessantly refresh your social feeds. Or stare at cracks in the ceiling. Right? Wrong. Slow your mind down with the soothing pitter patter of Night Rain."
 			],
 			[
 				"Tweet Button",
@@ -242,7 +225,8 @@
 			],
 			[
 				"Tweet Text",
-				"Based on my personality, I'd love to listen to #SpotifyKPopDaebak! spoti.fi/KPopDaebak\n\nTake the quiz here: [[WEBSITE-LINK]]"
+				"I’m a Ceiling Starer, and as it turns out, my sleep routine could do with a playlist of pouring rain and rolling thunder sounds. https://spoti.fi/NightRain\nTake the quiz here: [[WEBSITE-LINK]]",
+				"*[[WEBSITE-LINK]] will be replaced with the live link by the system automatically. Do not make changes."
 			]
 		]
 	},
@@ -251,11 +235,11 @@
 		"values": [
 			[
 				"Header Image",
-				"https://monsters-at-work.web.app/img/r2.jpg"
+				"https://pcexp.app/q-preview/N-nSRM2LqMMckKu_Mo9MU/img/-y2_wALUJEuzFsXAbUpIv.jpg"
 			],
 			[
 				"Summary",
-				"More chilled than a bowl of naengmyeon and just as tasty, you’re laid back with a groovy K-R&B vibe. You go with the flow and love to kick back with your fam like Crush and DeVita. You are Trenchill K-R&B."
+				"The very presence of ~oxygen~ is enough to wake you up in the night. Before you get out of bed and into the pantry, listen to the Deep Sleep playlist – it’ll help you get that extra good REM sleep and ensure you avoid 2am snacker’s guilt."
 			],
 			[
 				"Tweet Button",
@@ -263,7 +247,8 @@
 			],
 			[
 				"Tweet Text",
-				"Based on my personality, I'd love to listen to #SpotifyTrenChillKRnB! spoti.fi/TrenChillKRnB\n\nTake the quiz here: [[WEBSITE-LINK]]"
+				"I’m a Light Sleeper, and as it turns out, my sleep routine could do with a playlist of soothing ambient tracks for deep sleep. https://spoti.fi/DeepSleep \nTake the quiz here: [[WEBSITE-LINK]]",
+				"*[[WEBSITE-LINK]] will be replaced with the live link by the system automatically. Do not make changes."
 			]
 		]
 	},
@@ -272,11 +257,11 @@
 		"values": [
 			[
 				"Header Image",
-				"https://monsters-at-work.web.app/img/r3.jpg"
+				"https://pcexp.app/q-preview/N-nSRM2LqMMckKu_Mo9MU/img/wf5U-17bUJOzHZrQaZpFF.jpg"
 			],
 			[
 				"Summary",
-				"They be callin’ and you be rollin’. From the streets to the stage, you always make your mark. Representing with your homies like Agust D and GRAY, you bring the sickest rhymes and the craziest beats. You are K-Hip-Hop +82."
+				"You’re a classic night owl. Like all nocturnal creatures, you come alive at night – which means you end up sleeping during the day. The thing is, you’ve got a lot working against you: blinding sunlight, leaf blowers, and the temptation to keep scrolling down your feed. Block it all out with the dreamy ambient sounds of Floating Through Space and enjoy that sweet shut-eye. "
 			],
 			[
 				"Tweet Button",
@@ -284,7 +269,8 @@
 			],
 			[
 				"Tweet Text",
-				"Based on my personality, I'd love to listen to #SpotifyKHipHop82! spoti.fi/KHipHop82 \n\nTake the quiz here: [[WEBSITE-LINK]]"
+				"I’m a Night Owl, and as it turns out, my sleep routine could do with a playlist of ambient drone sounds to help make me feel weightless. https://spoti.fi/FloatingSpace \nTake the quiz here: [[WEBSITE-LINK]]",
+				"*[[WEBSITE-LINK]] will be replaced with the live link by the system automatically. Do not make changes."
 			]
 		]
 	},
@@ -293,11 +279,11 @@
 		"values": [
 			[
 				"Header Image",
-				"https://monsters-at-work.web.app/img/r4.jpg"
+				"https://pcexp.app/q-preview/N-nSRM2LqMMckKu_Mo9MU/img/csHdMklNFg7rFgn1Qkr3v.jpg"
 			],
 			[
 				"Summary",
-				"A true friend, you always have your bestie's back - come rain or shine. Nothing can get in your way when you have your mind set on something. And when you get your girls together - from CHUNG HA to Solar - the boys better watch out. You are Girl Krush."
+				"You’re an absolute bedtime hero. Truly, you are a gold standard sleeper. Your eyes are bag-free and your circadian rhythm is really something. So the question isn’t what’ll put you to sleep, but what will help you wake up in the morning after your marathon sleep? We’ve got just the tonic. It’s time for some extra Morning Motivation."
 			],
 			[
 				"Tweet Button",
@@ -305,49 +291,8 @@
 			],
 			[
 				"Tweet Text",
-				"Based on my personality, I'd love to listen to #SpotifyGirlKrush! spoti.fi/GirlKrush\n\nTake the quiz here: [[WEBSITE-LINK]]"
-			]
-		]
-	},
-	{
-		"name": "Result 5",
-		"values": [
-			[
-				"Header Image",
-				"https://monsters-at-work.web.app/img/r5.jpg"
-			],
-			[
-				"Summary",
-				"Despite being the maknae, you got mad skills. You know what’s what, who’s who and where to find the freshest beats. You are always moving, kickin’ it with friends like BANG YE DAM and SECRET NUMBER. You are K-Pop Rising."
-			],
-			[
-				"Tweet Button",
-				"Share playlist"
-			],
-			[
-				"Tweet Text",
-				"Based on my personality, I'd love to listen to #SpotifyKPopRising! spoti.fi/KPopRising\n\nTake the quiz here: [[WEBSITE-LINK]]"
-			]
-		]
-	},
-	{
-		"name": "Result 6",
-		"values": [
-			[
-				"Header Image",
-				"https://monsters-at-work.web.app/img/r5.jpg"
-			],
-			[
-				"Summary",
-				"You’re a sensitive soul and you’re not afraid to express it. You like to throw your hands in the air and wave ‘em around because you do care. You can happily spend all night jamming with your fellow rockers like DAY6 and HYUKOH. You are Cool K:IDs Rock."
-			],
-			[
-				"Tweet Button",
-				"Share playlist"
-			],
-			[
-				"Tweet Text",
-				"Based on my personality, I'd love to listen to #SpotifyCoolKIDSRock! spoti.fi/CoolKIDSRock\n\nTake the quiz here: [[WEBSITE-LINK]]"
+				"I’m a Marathon Sleeper, and as it turns out, my sleep needs no improvement – but my mornings are about to get better with this cracking playlist. http://spoti.fi/MorningMotivation \nTake the quiz here: [[WEBSITE-LINK]]",
+				"*[[WEBSITE-LINK]] will be replaced with the live link by the system automatically. Do not make changes."
 			]
 		]
 	}
