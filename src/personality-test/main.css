@@ -80,6 +80,16 @@ img.header+p {
 	background-color: rgba(29, 161, 242, 0.1);
 }
 
+.footer{
+	color: #666;
+	font-size: 0.8em;
+	text-align: center;
+	position: absolute;
+}
+.footer a{
+	color: #666;
+	text-decoration: underline;
+}
 
 @media (prefers-color-scheme: dark) {
 	html {
@@ -103,8 +113,8 @@ img.header+p {
 	.footer {
 		color: #aaa;
 	}
-
-	.footer a:hover {
-		color: #fff;
+	.footer a{
+		color: #aaa;
+		text-decoration: underline;
 	}
 }

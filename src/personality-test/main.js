@@ -99,15 +99,17 @@ class Result {
 class PersonalityTest {
 	constructor() {
 		this.questionIndex = -1;
-		this.randomizeQuestions = true;
 		this.userAnswers = [];
 		this.questions = [];
 		this.results = {};
 		this.headerHeight = 20;
+		let footer = "";
+		let randomizeQuestions = true;
 		for (let sheet of DATA) {
 			let name = sheet.name.toLowerCase().trim();
 			if (name == 'settings') {
-				this.randomizeQuestions = sheet.values[3][1].toLowerCase().trim() == 'yes';
+				randomizeQuestions = _extract_data(/^randomize/i, sheet.values) == 'yes';
+				footer = _extract_data(/^footer/i, sheet.values);
 			} else if (name.match(/^question/i)) {
 				this.questions.push(new Question(this, sheet.values, name));
 			} else if (name.match(/^result/i)) {
@@ -117,10 +119,16 @@ class PersonalityTest {
 		this.holder = document.createElement('div');
 		this.holder.className = "main";
 		document.body.appendChild(this.holder);
-		if (this.randomizeQuestions) _shuffle(this.questions);
-
+		if (randomizeQuestions) _shuffle(this.questions);
+		if (footer) {
+			let ele = document.createElement('div');
+			ele.innerHTML = footer;
+			ele.className = 'footer';
+			document.body.append(ele);
+		}
 		this.nextQuestion();
 	}
+
 	nextQuestion() {
 		if (this.questionIndex == 0) {
 			this.headerHeight = this.holder.querySelector('img').offsetHeight;
@@ -131,6 +139,11 @@ class PersonalityTest {
 			this.questions[this.questionIndex].show();
 		} else {
 			this.showResult();
+		}
+		let footer = document.querySelector('.footer');
+		if (footer) {
+			footer.style.top = Math.max(this.holder.offsetHeight, window.innerHeight - footer.offsetHeight - 5) + 'px';
+			footer.style.width = this.holder.offsetWidth + 'px';
 		}
 	}
 
