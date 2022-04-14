@@ -1,0 +1,301 @@
+		[
+			{
+				"name": "Settings",
+				"values": [
+					[
+						"Twitter @Handle",
+						"Baristabar"
+					],
+					[
+						"Website Preview Image",
+						"https://pcexp.app/q-preview/5twFSWtl3LNfOnKUcRzB9/img/_mvjqgep4rpA-KXzCu4v7.jpg",
+						"16:9 JPEG Image (maximum 1920x1080)"
+					],
+					[
+						"Quiz Name",
+						"A Math Quiz",
+						"Name of the quiz or campaign name"
+					],
+					[
+						"Randomize Questions",
+						"YES",
+						"Shuffle questions in random order"
+					],
+					[
+						"Footer Text",
+						"All rights reserved.",
+						"(Optional) Footer copy right and terms and conditions etc. Supports HTML"
+					]
+				]
+			},
+			{
+				"name": "Question 1",
+				"values": [
+					[
+						"Header Image",
+						"https://pcexp.app/q-preview/5twFSWtl3LNfOnKUcRzB9/img/JMWaHCgG2r1wj3D2dvFKt.jpg"
+					],
+					[
+						"Question"
+					],
+					[
+						"Randomize Answers",
+						"YES"
+					],
+					[
+						"Answer 1",
+						"15",
+						"correct"
+					],
+					[
+						"Answer 2",
+						"16"
+					],
+					[
+						"Answer 3",
+						"17"
+					],
+					[
+						"Answer 4",
+						"18"
+					]
+				]
+			},
+			{
+				"name": "Question 2",
+				"values": [
+					[
+						"Header Image",
+						"https://pcexp.app/q-preview/5twFSWtl3LNfOnKUcRzB9/img/NqX3dKXJDswKqL0mjyq4p.jpg"
+					],
+					[
+						"Question"
+					],
+					[
+						"Randomize Answers",
+						"YES"
+					],
+					[
+						"Answer 1",
+						"16",
+						"correct"
+					],
+					[
+						"Answer 2",
+						"17"
+					],
+					[
+						"Answer 3",
+						"18"
+					],
+					[
+						"Answer 4",
+						"19"
+					]
+				]
+			},
+			{
+				"name": "Question 3",
+				"values": [
+					[
+						"Header Image",
+						"https://pcexp.app/q-preview/5twFSWtl3LNfOnKUcRzB9/img/1PIf9QoOrgVsXd8JA5MLX.jpg"
+					],
+					[
+						"Question"
+					],
+					[
+						"Randomize Answers",
+						"YES"
+					],
+					[
+						"Answer 1",
+						"17",
+						"correct"
+					],
+					[
+						"Answer 2",
+						"18"
+					],
+					[
+						"Answer 3",
+						"19"
+					],
+					[
+						"Answer 4",
+						"20"
+					]
+				]
+			},
+			{
+				"name": "Question 4",
+				"values": [
+					[
+						"Header Image",
+						"https://pcexp.app/q-preview/5twFSWtl3LNfOnKUcRzB9/img/7MNcQAAHGlokP6VpDTKM7.jpg"
+					],
+					[
+						"Question"
+					],
+					[
+						"Randomize Answers",
+						"YES"
+					],
+					[
+						"Answer 1",
+						"18",
+						"correct"
+					],
+					[
+						"Answer 2",
+						"19"
+					],
+					[
+						"Answer 3",
+						"20"
+					],
+					[
+						"Answer 4",
+						"21"
+					]
+				]
+			},
+			{
+				"name": "Question 5",
+				"values": [
+					[
+						"Header Image",
+						"https://pcexp.app/q-preview/5twFSWtl3LNfOnKUcRzB9/img/sdEsqUoQxTStJQkk6Z90R.jpg"
+					],
+					[
+						"Question"
+					],
+					[
+						"Randomize Answers",
+						"NO"
+					],
+					[
+						"Answer 1",
+						"19"
+					],
+					[
+						"Answer 2",
+						"Nineteen"
+					],
+					[
+						"Answer 3",
+						"十九"
+					],
+					[
+						"Answer 4",
+						"All of the above",
+						"correct"
+					]
+				]
+			},
+			{
+				"name": "Result 1",
+				"values": [
+					[
+						"Header Image",
+						"https://pcexp.app/q-preview/5twFSWtl3LNfOnKUcRzB9/img/coXJD_IDbB6sf3V8eHxB0.jpg"
+					],
+					[
+						"Minimum Score",
+						"0"
+					],
+					[
+						"Maximum Score",
+						"2"
+					],
+					[
+						"Summary",
+						"😭 You have scored [[SCORE]] out of 5. \n\nI think you can do better.",
+						"*[[SCORE]] is the placeholder of the actual score"
+					],
+					[
+						"Tweet Button",
+						"Share My Score"
+					],
+					[
+						"Try Again Button",
+						"Try Again"
+					],
+					[
+						"Tweet Text",
+						"I scored [[SCORE]] out of 5 for this test. You can try to beat my score here \n\n[[WEBSITE-LINK]]",
+						"*[[WEBSITE-LINK]] will be replaced with the live link by the system automatically. Do not make changes."
+					]
+				]
+			},
+			{
+				"name": "Result 2",
+				"values": [
+					[
+						"Header Image",
+						"https://pcexp.app/q-preview/5twFSWtl3LNfOnKUcRzB9/img/rdEWpRqtEzAA8FJPMnCO2.jpg"
+					],
+					[
+						"Minimum Score",
+						"3"
+					],
+					[
+						"Maximum Score",
+						"4"
+					],
+					[
+						"Summary",
+						"😇 You have scored [[SCORE]] out of 5. \n\nYou almost got everything correct!",
+						"*[[SCORE]] is the placeholder of the actual score"
+					],
+					[
+						"Tweet Button",
+						"Share My Score"
+					],
+					[
+						"Try Again Button",
+						"Try Again"
+					],
+					[
+						"Tweet Text",
+						"I scored [[SCORE]] out of 5 for this test. You can try to beat my score here \n\n[[WEBSITE-LINK]]",
+						"*[[WEBSITE-LINK]] will be replaced with the live link by the system automatically. Do not make changes."
+					]
+				]
+			},
+			{
+				"name": "Result 3",
+				"values": [
+					[
+						"Header Image",
+						"https://pcexp.app/q-preview/5twFSWtl3LNfOnKUcRzB9/img/fc_Kyfqgosg1fWFOY4GEb.jpg"
+					],
+					[
+						"Minimum Score",
+						"5"
+					],
+					[
+						"Maximum Score",
+						"5"
+					],
+					[
+						"Summary",
+						"🤩 Impressive! You have answered all questions correctly.",
+						"*[[SCORE]] is the placeholder of the actual score"
+					],
+					[
+						"Tweet Button",
+						"Share My Score"
+					],
+					[
+						"Try Again Button",
+						"Try Again"
+					],
+					[
+						"Tweet Text",
+						"I scored [[SCORE]] out of 5 for this test. You can try to beat my score here \n\n[[WEBSITE-LINK]]",
+						"*[[WEBSITE-LINK]] will be replaced with the live link by the system automatically. Do not make changes."
+					]
+				]
+			}
+		]

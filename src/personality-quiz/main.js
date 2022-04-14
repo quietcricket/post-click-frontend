@@ -1,0 +1,1 @@
+window.quiz = new BaseQuiz(BaseQuestion, BaseAnswer, BaseResult);

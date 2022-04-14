@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    background-color: #222;
+}
+
+body {
+    max-width: 420px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-color: white;
+    padding: 25px;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img.emoji {
+    height: 1em;
+    width: 1em;
+    margin: 0 .05em 0 .1em;
+    vertical-align: -0.1em;
+}
+
+img.header {
+    max-width: 100%;
+    border-radius: 14px;
+    border: solid 1px rgb(204, 214, 221);
+    padding: 0px;
+    user-select: none;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+img.header+p {
+    margin-top: 0px;
+}
+
+.btn {
+    display: block;
+    border-radius: 18px;
+    margin: 0 auto 10px auto;
+    padding: 0.3em 0.5em;
+    border: solid 1px rgb(29, 161, 242);
+    color: rgb(29, 161, 242);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.2s;
+    transition-property: background-color;
+    font-size: 1em;
+    user-select: none;
+}
+
+.btn:hover {
+    background-color: rgba(29, 161, 242, 0.1);
+}
+
+.btn.correct {
+    background-color: rgba(0, 100, 0, 0.8);
+    color: white;
+}
+
+.btn.wrong {
+    background-color: rgba(200, 0, 0, 0.8);
+    color: white;
+}
+
+.btn.disabled {
+    pointer-events: none;
+}
+
+.footer {
+    color: #666;
+    font-size: 0.8em;
+    text-align: center;
+    position: absolute;
+}
+
+.footer a {
+    color: #666;
+    text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        background-color: white;
+    }
+
+    body {
+        background-color: #222;
+        color: white;
+    }
+
+    img.header {
+        border-color: rgb(47, 51, 54);
+    }
+
+    .btn {
+        color: rgb(29, 161, 242);
+        border-color: rgb(29, 161, 242);
+    }
+
+    .footer {
+        color: #aaa;
+    }
+
+    .footer a {
+        color: #aaa;
+        text-decoration: underline;
+    }
+}

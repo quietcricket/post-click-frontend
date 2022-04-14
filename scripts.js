@@ -7,8 +7,13 @@ const minify = require('minify');
 async function genHTML(variant) {
 	let folder = path.join('src', variant);
 	let html = fs.readFileSync(path.join(folder, 'index.html')).toString('utf-8');
-	let css = fs.readFileSync(path.join(folder, 'main.css')).toString('utf-8');
-	let js = fs.readFileSync(path.join(folder, 'main.js')).toString('utf-8');
+	let css = fs.readFileSync(path.join('src', 'base.css')).toString('utf-8');
+	if (fs.existsSync(path.join(folder, 'main.css'))) {
+		css += fs.readFileSync(path.join(folder, 'main.css')).toString('utf-8');
+	}
+	let js = fs.readFileSync(path.join('src', 'utils.js')).toString('utf-8');
+	js += fs.readFileSync(path.join('src', 'base.js')).toString('utf-8');
+	js += fs.readFileSync(path.join(folder, 'main.js')).toString('utf-8');
 	html = html.replace('[[JAVASCRIPT]]', js);
 	html = html.replace('[[CSS]]', css);
 	fs.writeFileSync(path.join('gen', variant + ".html"), html);
